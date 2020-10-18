@@ -11,8 +11,8 @@
     "build": "babel lib -d dist",
     "serve": "NODE_ENV=production pm2 start dist/index.js",
     "restart": "pm2 restart dist/index.js",
-    "cluster": "NODE_ENV=production pm2 start dist/index.js -i 0 --name list",
-    "clusterReload": "NODE_ENV=production pm2 reload list",
+    "cluster": "NODE_ENV=production pm2 start dist/index.js -i 0 --name traveltribelist",
+    "clusterReload": "NODE_ENV=production pm2 reload traveltribelist",
     "reloadAll": "git pull && yarn && yarn build && yarn clusterReload",
     "cloc": "cloc lib ../client/src "
   },
